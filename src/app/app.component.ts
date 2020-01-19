@@ -10,6 +10,7 @@ export class AppComponent implements OnInit {
   title = "Icon Concrete";
 
   constructor(private seoService: SeoService) {}
+
   ngOnInit() {
     this.createLinkForCanonicalURL();
   }
