@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from "@angular/core";
+import { Component, OnInit, ViewEncapsulation, ViewChild } from "@angular/core";
 import { NgbModal } from "@ng-bootstrap/ng-bootstrap";
 import { ScrollSpyService } from "ngx-scrollspy";
 import { SeoService } from "../../../seo.service";
@@ -21,15 +21,15 @@ import { SeoService } from "../../../seo.service";
       .dark-modal .close {
         color: white;
       }
-    `
-  ]
+    `,
+  ],
 })
 export class Index1Component implements OnInit {
   closeResult: string;
 
   id = "JlvxDa7Sges";
   playerVars = {
-    cc_lang_pref: "en"
+    cc_lang_pref: "en",
   };
 
   private player;
@@ -59,7 +59,7 @@ export class Index1Component implements OnInit {
 
     document.getElementById("navbar1").classList.add("navbar-white");
 
-    window.onscroll = function() {
+    window.onscroll = function () {
       myFunction();
     };
     var navbar1 = document.getElementById("navbar1");
